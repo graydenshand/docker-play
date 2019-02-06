@@ -1,3 +1,7 @@
-docker build app -t gshand_python:latest  
+From Desktop
 
-docker run -it --rm --name dev_base gshand_python:latest
+docker build docker_play -t gshand_python:latest  
+
+
+#Launches the docker container with interactive shell, and mounts the app directory (on host) to the cwd of the docker container. 
+docker run -it --rm --name dev_base -v /Users/grayden/Desktop/docker_play/app:/home/app gshand_python:latest
