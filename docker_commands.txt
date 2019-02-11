@@ -4,4 +4,4 @@ docker build docker_play -t gshand_python:latest
 
 
 #Launches the docker container with interactive shell, and mounts the app directory (on host) to the cwd of the docker container. 
-docker run -it --rm --name dev_base -v /Users/grayden/Desktop/docker_play/app:/home/app gshand_python:latest
+docker run -it --rm --name dev_base -P -v /Users/grayden/Desktop/docker_play/app:/home/app gshand_python:latest
